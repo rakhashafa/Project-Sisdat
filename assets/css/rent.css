@@ -1,0 +1,310 @@
+*{
+    font-family: sans-serif;
+}
+
+.reserve{
+    position: absolute;
+    width: 300px;
+    height: 353px;
+    left: 145px;
+    top: 170px;
+    background: rgba(196, 196, 196, 0.28);;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+.judul{
+    position: absolute;
+    width: 480px;
+    height: 60px;
+    left: 56px;
+    top: 124px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-decoration-color: #ed563b;
+
+    color: #FFFFFF;
+}
+
+.judul em{
+    font-style: normal;
+    color: #ed563b;
+}
+.formulir {
+    margin-left: 60px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.formulir input {
+  margin-left: 13px;  
+  font-size:16px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.pick, .ret, .code{
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    border: 1px solid #ed563b;
+    padding: 1px;
+    margin: 10px;
+    margin-left: -10px;
+    margin-right: 120px;
+}
+
+p{
+    font-family: sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+button.rent-btn{
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    padding: 8px 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 40px;
+    background-color: #ed563b;
+    color: #efefef;
+    margin-left: 80px;
+    margin-top: 33px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.pil1{
+    position: absolute;
+    width: 645px;
+    height: 223px;
+    left: 620px;
+    top: 115px;
+    background: rgba(196, 196, 196, 0.28);
+    border-radius: 25px;
+}
+
+.pil2{
+    position: absolute;
+    width: 645px;
+    height: 223px;
+    left: 620px;
+    top: 380px;
+    background: rgba(196, 196, 196, 0.28);
+    border-radius: 25px;
+}
+
+.foto-car{
+    position: absolute;
+    width: 216px;
+    height: 223px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.foto img{
+    width: 200px;
+}
+
+.foto{
+    margin-left: 8px;
+    margin-top: 54.36px;
+}
+
+.name-car{
+    position: absolute;
+    width: 450px;
+    height: 32px;
+    left: 240px;
+    top: 10px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.2em;
+
+    color: #ED563B;
+}
+
+.sub{
+    position: absolute;
+    width: 450px;
+    height: 32px;
+    left: 0px;
+    top: 45px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.harga-sewa{
+    align-items: center;
+    width: 216px;
+    height: 40px;
+    padding: 0px 0px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 90px;
+    background-color: #ed563b;
+
+}
+
+.harga-sewa p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #efefef;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 7.5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.book h2{
+    align-items: center;
+    width: 216px;
+    height: 40px;
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 90px;
+    background-color: #ed563b;
+    position: absolute;
+    width: 480px;
+    height: 60px;
+    left: 266.5px;
+    top: -30px;
+    padding-top: 8px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.38em;
+
+    color: #FFFFFF;
+}
+
+.kartu-book{
+    position: absolute;
+    width: 1013px;
+    height: 485px;
+    left: 176px;
+    top: 120px;
+    
+    background: rgba(196, 196, 196, 0.28);
+    border-radius: 25px;
+}
+
+.foto-car-transaksi{
+    position: absolute;
+    width: 216px;
+    height: 223px;
+    left: 40px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.detail{
+    position: absolute;
+    width: 450px;
+    height: 32px;
+    left: 300px;
+    top: 40px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.pilihan1{
+    position: absolute;
+    width: 223px;
+    height: 194px;
+    left: 80px;
+    top: 305px;
+}
+
+.pilihan2{
+    position: absolute;
+    width: 223px;
+    height: 194px;
+    left: 80px;
+    top: 360px;
+}
+
+.pilihan3{
+    position: absolute;
+    width: 223px;
+    height: 194px;
+    left: 80px;
+    top: 415px;
+}
+
+.column, .column3{
+    width: 140px;
+    height: 40px;
+    padding: 8px 10px 10px 10px;
+    border: none;
+    
+    border-radius: 40px;
+    background-color: #ed563b;
+}
+
+.column a{
+    font-size: 18px;
+    font-family: sans-serif;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #efefef;
+}
+
+.column3 a{
+    font-size: 18px;
+    font-family: sans-serif;
+    align-content: center;
+    margin-left: 35px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #efefef;
+}

@@ -33,7 +33,7 @@ body {
       color: #ed563b;
   }
   
-  .logo{
+  .logos{
     background-color: #efefef;
     width: 100px;
     height: 100px;
@@ -45,7 +45,7 @@ body {
     
   }
   
-  .logo img{
+  .logos img{
     width: 100%;
   }
 
@@ -168,7 +168,7 @@ font-size:14px;
 
 button.signup-btn{
   align-items: center;
-  width: 160px;
+  width: 150px;
   height: 40px;
   padding: 8px 8px;
   border: none;
@@ -176,10 +176,10 @@ button.signup-btn{
   border-radius: 40px;
   background-color: #ed563b;
   color: #efefef;
-  margin-top: 10px;
-  margin-left: 270px;
+  margin-top: 5px;
+  margin-left: 150px;
   margin-right: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
   letter-spacing: 5px;
