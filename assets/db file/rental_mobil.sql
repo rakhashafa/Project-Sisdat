@@ -2,7 +2,6 @@
 -- Database: rental_mobil
 --
 -- --------------------------------------------------------
-
 --
 -- Table structure for table tblpemilik
 --
@@ -15,11 +14,6 @@ CREATE TABLE tblpemilik (
 );
 
 -- --------------------------------------------------------
-/*CREATE TABLE tbllogin (
-  username varchar(100) NOT NULL PRIMARY KEY,
-  password char(100) DEFAULT NULL,
-  no_ktp_pelanggan int(11)
-);*/
 --
 -- Table structure for table tbltransaksi
 --
@@ -36,7 +30,7 @@ CREATE TABLE tbltransaksi (
 -- --------------------------------------------------------
 
 --
--- Table structure for table tblusers
+-- Table structure for table tblpelanggan
 --
 
 CREATE TABLE tblpelanggan (
@@ -51,27 +45,22 @@ CREATE TABLE tblpelanggan (
 -- --------------------------------------------------------
 
 --
--- Table structure for table tbmobil
+-- Table structure for table tblmobil
 --
 
 CREATE TABLE tblmobil (
-  kode_mobil int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  kode_mobil varchar(25) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   tipe_mobil varchar(100) DEFAULT NULL,
   bahan_bakar varchar(100) DEFAULT NULL,
   transmisi varchar(100) DEFAULT NULL,
   kursi_penumpang int(11) DEFAULT NULL,
-  no_ktp_pemilik int(11)
+  no_ktp_pemilik int(11),
+  harga_perhari int(20)
 ); 
 
 --
 -- Indexes for dumped tables
 --
-
--- login
-/*ALTER TABLE tbllogin
-ADD foreign KEY (no_ktp_pelanggan)
-references tblpelanggan(no_ktp_pelanggan);
-*/
 
 -- mobil
 ALTER TABLE tblmobil
@@ -83,6 +72,7 @@ ALTER TABLE tbltransaksi
 ADD foreign KEY (no_ktp_pelanggan)
 references tblpelanggan(no_ktp_pelanggan);
 
+-- transaksi
 ALTER TABLE tbltransaksi
 ADD foreign KEY (kode_mobil)
 references tblmobil(kode_mobil);

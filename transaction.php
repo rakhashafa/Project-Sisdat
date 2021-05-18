@@ -2,28 +2,16 @@
 
     include "connect.php";
 
-    /*$kode_trans = "SELECT no_transaksi FROM tbltransaksi WHERE no_transaksi = '$_GET[vehiclecode]'";
-    $result = mysqli_query($connect, $kode_trans);
-    $test = mysqli_fetch_array($result); */
-
     $query = "SELECT * FROM tbltransaksi 
-    INNER JOIN (tblmobil INNER JOIN tblPemilik USING(no_ktp_pemilik) ) USING (kode_mobil) 
-    INNER JOIN tblPelanggan USING (no_ktp_pelanggan) 
+    INNER JOIN (tblmobil INNER JOIN tblpemilik USING(no_ktp_pemilik) ) USING (kode_mobil) 
+    INNER JOIN tblpelanggan USING (no_ktp_pelanggan) 
     WHERE no_transaksi = '$_GET[code]'";
     
-    $pickup = "SELECT tgl_pinjam FROM tbltransaksi WHERE no_transaksi = '$_GET[code]'"; 
-    $hasil = mysqli_query($connect, $pickup);
-    $baris = mysqli_fetch_array($hasil);
-
-    $date = "SELECT datediff(day, $baris, $return)";
     
-    $return = "SELECT tgl_kembali FROM tbltransaksi WHERE no_transaksi = '$_GET[code]'";
-    
-    echo $date;
-    
-    // echo "$query";
     $result = mysqli_query($connect, $query);
     $row = mysqli_fetch_array($result);
+
+    
 ?>
 
 
@@ -118,7 +106,7 @@
                     <div class="bon">
                         <div class="detail">
                             <div>
-                                <label>Transaction Code :</label><br>
+                                <label>Transaction Code :</label>
                                 <span><?php echo $row['no_transaksi'] ?></span>
                             </div>
                             <div>
@@ -155,7 +143,11 @@
                             </div>
                             <div>
                                 <label>Price :</label>
-                                <span> <?isi php ?></span>
+                                <span> <?php if($row['kode_mobil'] == 'J01'){
+                                    echo "350.000/day";
+                                }else {
+                                    echo "245.000/day";
+                                }  ?></span>
                             </div>
                         </div>
                         <div class="pilihan1">
